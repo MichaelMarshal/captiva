@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-3 mb-6">
                 <div className="relative">
                   <img 
-                    src="/logo.png" 
+                    src="https://michaelmarshal.github.io/captiva/logo.png" 
                     alt="Captiva Cyber Logo" 
                     className="h-48 w-auto"
                   />
