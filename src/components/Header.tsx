@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               <div className="relative">
                 <img 
                   
-                  src="https://michaelmarshal.github.io/captiva/logo.png" 
+                  src="https://michaelmarshal.github.io/captiva/logo.svg" 
                   alt="Captiva Cyber Logo" 
                   className="h-48 w-auto"
                 />
