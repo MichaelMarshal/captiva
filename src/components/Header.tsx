@@ -67,8 +67,7 @@ const Header: React.FC = () => {
             <Link to="/" className="flex items-center space-x-3">
               <div className="relative">
                 <img 
-                  
-                  src="https://michaelmarshal.github.io/captiva/logo.svg" 
+                  src="https://michaelmarshal.github.io/captiva/logo.png" 
                   alt="Captiva Cyber Logo" 
                   className="h-48 w-auto"
                 />
