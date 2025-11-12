@@ -1,0 +1,258 @@
+/* Comprehensive Light Theme System */
+
+/* Main background colors - based on brochure light theme */
+.light-theme .bg-gray-900 {
+  background-color: #f8fafc !important;
+}
+
+.light-theme .bg-gray-800 {
+  background-color: #ffffff !important;
+}
+
+.light-theme .bg-gray-700 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Background variants and transparencies */
+.light-theme .bg-gray-900\/95 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+}
+
+.light-theme .bg-gray-900\/50 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: #e2e8f0 !important;
+}
+
+.light-theme .bg-gray-800\/50 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: #e2e8f0 !important;
+}
+
+.light-theme .bg-gray-800\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Gradient backgrounds for hero sections */
+.light-theme .from-gray-900 {
+  --tw-gradient-from: #f8fafc !important;
+  --tw-gradient-from-position: !important;
+  --tw-gradient-to: rgba(248, 250, 252, 0) !important;
+  --tw-gradient-to-position: !important;
+  --tw-gradient-stops: var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position) !important;
+}
+
+.light-theme .via-gray-800 {
+  --tw-gradient-to: rgba(255, 255, 255, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from) var(--tw-gradient-from-position), #ffffff var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position) !important;
+}
+
+.light-theme .to-black {
+  --tw-gradient-to: #f1f5f9 !important;
+}
+
+/* Text colors */
+.light-theme .text-white {
+  color: #1e293b !important;
+}
+
+.light-theme .text-gray-300 {
+  color: #475569 !important;
+}
+
+.light-theme .text-gray-400 {
+  color: #64748b !important;
+}
+
+.light-theme .text-gray-200 {
+  color: #64748b !important;
+}
+
+.light-theme .text-gray-500 {
+  color: #475569 !important;
+}
+
+/* Border colors */
+.light-theme .border-gray-700 {
+  border-color: #e2e8f0 !important;
+}
+
+.light-theme .border-gray-600 {
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme .border-gray-500 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Accent colors - keeping brand consistency */
+.light-theme .text-cyan-400 {
+  color: #0284c7 !important;
+}
+
+.light-theme .text-cyan-300 {
+  color: #0369a1 !important;
+}
+
+.light-theme .text-blue-400 {
+  color: #1d4ed8 !important;
+}
+
+.light-theme .text-blue-600 {
+  color: #1e40af !important;
+}
+
+/* Service-specific accent colors */
+.light-theme .text-green-400 {
+  color: #059669 !important;
+}
+
+.light-theme .text-orange-400 {
+  color: #ea580c !important;
+}
+
+.light-theme .text-red-400 {
+  color: #dc2626 !important;
+}
+
+.light-theme .text-purple-400 {
+  color: #9333ea !important;
+}
+
+.light-theme .text-yellow-500 {
+  color: #eab308 !important;
+}
+
+.light-theme .text-amber-500 {
+  color: #f59e0b !important;
+}
+
+/* Hover states for borders */
+.light-theme .hover\:border-cyan-500\/50:hover {
+  border-color: rgba(8, 132, 199, 0.5) !important;
+}
+
+.light-theme .hover\:border-cyan-500:hover {
+  border-color: #0284c7 !important;
+}
+
+.light-theme .hover\:border-blue-500:hover {
+  border-color: #3b82f6 !important;
+}
+
+.light-theme .hover\:border-green-500:hover {
+  border-color: #10b981 !important;
+}
+
+.light-theme .hover\:border-orange-500:hover {
+  border-color: #f97316 !important;
+}
+
+.light-theme .hover\:border-red-500:hover {
+  border-color: #ef4444 !important;
+}
+
+/* Hover states for text */
+.light-theme .hover\:text-cyan-400:hover {
+  color: #0284c7 !important;
+}
+
+.light-theme .hover\:text-cyan-300:hover {
+  color: #0369a1 !important;
+}
+
+.light-theme .hover\:text-green-400:hover {
+  color: #059669 !important;
+}
+
+.light-theme .hover\:text-green-300:hover {
+  color: #047857 !important;
+}
+
+.light-theme .hover\:text-blue-400:hover {
+  color: #1d4ed8 !important;
+}
+
+.light-theme .hover\:text-blue-300:hover {
+  color: #1e40af !important;
+}
+
+/* Background hover states */
+.light-theme .hover\:bg-gray-700:hover {
+  background-color: #e2e8f0 !important;
+}
+
+.light-theme .hover\:bg-gray-600:hover {
+  background-color: #cbd5e1 !important;
+}
+
+.light-theme .hover\:bg-gray-700\/50:hover {
+  background-color: rgba(226, 232, 240, 0.5) !important;
+}
+
+.light-theme .hover\:bg-gray-700\/30:hover {
+  background-color: rgba(226, 232, 240, 0.3) !important;
+}
+
+/* Gradients for service pages */
+.light-theme .from-cyan-400 {
+  --tw-gradient-from: #0284c7 !important;
+}
+
+.light-theme .to-blue-600 {
+  --tw-gradient-to: #1d4ed8 !important;
+}
+
+.light-theme .from-cyan-500 {
+  --tw-gradient-from: #0284c7 !important;
+}
+
+.light-theme .from-green-500 {
+  --tw-gradient-from: #10b981 !important;
+}
+
+.light-theme .to-emerald-600 {
+  --tw-gradient-to: #059669 !important;
+}
+
+.light-theme .from-orange-500 {
+  --tw-gradient-from: #f97316 !important;
+}
+
+.light-theme .to-red-600 {
+  --tw-gradient-to: #dc2626 !important;
+}
+
+.light-theme .from-red-500 {
+  --tw-gradient-from: #ef4444 !important;
+}
+
+.light-theme .to-orange-600 {
+  --tw-gradient-to: #ea580c !important;
+}
+
+.light-theme .from-blue-500 {
+  --tw-gradient-from: #3b82f6 !important;
+}
+
+.light-theme .to-purple-600 {
+  --tw-gradient-to: #9333ea !important;
+}
+
+/* Special elements */
+.light-theme .backdrop-blur-md {
+  backdrop-filter: blur(12px) !important;
+}
+
+/* Shadow adjustments for light theme */
+.light-theme .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Ring colors for focus states */
+.light-theme .focus\:ring-cyan-500:focus {
+  --tw-ring-color: #0284c7 !important;
+}
