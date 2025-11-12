@@ -20,7 +20,7 @@ const AppContent: React.FC = () => {
   const { theme } = useTheme();
   
   return (
-    <Router>
+    <Router basename="/captiva">
       <div className={`min-h-screen ${theme === 'light' ? 'bg-slate-50' : 'bg-gray-900'}`}>
         <Header />
         <Routes>
