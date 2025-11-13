@@ -100,8 +100,7 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight"
           >
-            Where{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+            Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
               Cyber Security
             </span>
             <br />
