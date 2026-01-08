@@ -155,12 +155,7 @@ const RespondPage: React.FC = () => {
     }
   ];
 
-  const stats = [
-    { value: '<2min', label: 'Response Time' },
-    { value: '24/7', label: 'Availability' },
-    { value: '98%', label: 'Containment Success' },
-    { value: '<4hrs', label: 'Average Resolution' }
-  ];
+
 
   const capabilities = [
     'Rapid threat containment and isolation',
@@ -217,28 +212,6 @@ const RespondPage: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="text-center bg-gray-800/50 border border-gray-700 rounded-xl p-6"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-600 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-400 font-medium">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </section>
 
