@@ -3,9 +3,6 @@ import { motion } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
 import { 
   Building2, 
-  Shield, 
-  TrendingUp, 
-  DollarSign,
   Clock,
   Users,
   CheckCircle,

@@ -2,13 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   Users, 
-  Award, 
-  Globe, 
   Zap, 
   Shield, 
-  TrendingUp,
-  Star,
-  Calendar
+  TrendingUp
 } from 'lucide-react';
 
 const About: React.FC = () => {

@@ -3,43 +3,14 @@ import { motion } from 'framer-motion';
 import { 
   Shield, 
   Users, 
-  Award, 
   Target,
   CheckCircle,
-  Globe,
   TrendingUp,
   Phone,
   Mail
 } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
-
-  const team = [
-    {
-      name: 'Sarah Chen',
-      role: 'Chief Security Officer',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face',
-      certifications: ['CISSP', 'CISM', 'CEH'],
-      experience: '12 years',
-      bio: 'Leading cybersecurity expert with extensive experience in enterprise security architecture and risk management.'
-    },
-    {
-      name: 'Marcus Rodriguez',
-      role: 'Lead Penetration Tester',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face',
-      certifications: ['OSCP', 'GPEN', 'GCIH'],
-      experience: '10 years',
-      bio: 'Ethical hacker and security researcher specializing in advanced persistent threat detection and response.'
-    },
-    {
-      name: 'Dr. Emily Watson',
-      role: 'Cybersecurity Researcher',
-      image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=300&h=300&fit=crop&crop=face',
-      certifications: ['PhD Security', 'CISSP', 'SANS'],
-      experience: '15 years',
-      bio: 'Research-focused security expert developing next-generation threat detection and mitigation strategies.'
-    }
-  ];
 
   const values = [
     {
