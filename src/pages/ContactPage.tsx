@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import { 
   MapPin, 
   Clock, 
-  Users, 
-  Award,
   Shield,
   Phone,
   Mail,

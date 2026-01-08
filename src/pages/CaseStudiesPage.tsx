@@ -4,7 +4,6 @@ import { useTheme } from '../contexts/ThemeContext';
 import { 
   Building2, 
   Clock,
-  Users,
   CheckCircle,
   ArrowRight,
   ExternalLink,

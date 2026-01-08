@@ -2,15 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
 import { 
-  FileText, 
   Download, 
   Eye, 
   Calendar, 
   Clock,
   ArrowRight,
   Shield,
-  Lock,
-  TrendingUp,
   Users
 } from 'lucide-react';
 

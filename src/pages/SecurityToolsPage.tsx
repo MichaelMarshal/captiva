@@ -15,7 +15,6 @@ import {
   Globe,
   Settings,
   AlertTriangle,
-  Wifi,
   Database,
   Terminal
 } from 'lucide-react';
