@@ -12,7 +12,6 @@ export default defineConfig({
     sourcemap: false,
     emptyOutDir: true,
     target: 'es2015',
-    minify: 'terser',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -20,14 +19,8 @@ export default defineConfig({
           router: ['react-router-dom'],
           animation: ['framer-motion'],
           icons: ['lucide-react']
-        },
-        assetFileNames: 'assets/[name]-[hash].[ext]',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js'
+        }
       }
     }
-  },
-  define: {
-    'process.env.NODE_ENV': '"production"'
   }
 })
