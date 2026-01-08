@@ -6,6 +6,9 @@ import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
+import WhitePapersPage from './pages/WhitePapersPage';
+import CaseStudiesPage from './pages/CaseStudiesPage';
+import SecurityToolsPage from './pages/SecurityToolsPage';
 import AssessPage from './pages/AssessPage';
 import HardenPage from './pages/HardenPage';
 import MonitorPage from './pages/MonitorPage';
@@ -28,6 +31,11 @@ const AppContent: React.FC = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          
+          {/* Resource Pages */}
+          <Route path="/resources/whitepapers" element={<WhitePapersPage />} />
+          <Route path="/resources/case-studies" element={<CaseStudiesPage />} />
+          <Route path="/resources/tools" element={<SecurityToolsPage />} />
           
           {/* Service Pages */}
           <Route path="/services/assess" element={<AssessPage />} />

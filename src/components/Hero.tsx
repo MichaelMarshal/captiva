@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
             className="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium"
           >
             <Shield className="w-4 h-4 mr-2" />
-            Trusted by 500+ Companies Worldwide
+            Advanced Cybersecurity Solutions
           </motion.div>
 
           {/* Main Heading */}
@@ -166,31 +166,7 @@ const Hero: React.FC = () => {
             </motion.button>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.8 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto"
-          >
-            {[
-              { number: '99.9%', label: 'Uptime Guarantee' },
-              { number: '24/7', label: 'Threat Monitoring' },
-              { number: '<5min', label: 'Response Time' }
-            ].map((stat, index) => (
-              <div key={stat.label} className="text-center">
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 1.4 + index * 0.1, duration: 0.6 }}
-                  className="text-3xl sm:text-4xl font-bold text-white mb-2"
-                >
-                  {stat.number}
-                </motion.div>
-                <div className="text-gray-400 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
+
         </motion.div>
       </div>
 

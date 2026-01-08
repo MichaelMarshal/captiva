@@ -118,13 +118,6 @@ const HardenPage: React.FC = () => {
     'Reduced risk of data breaches and cyber attacks'
   ];
 
-  const stats = [
-    { value: '85%', label: 'Reduction in Security Incidents' },
-    { value: '90%', label: 'Compliance Score Improvement' },
-    { value: '70%', label: 'Faster Threat Detection' },
-    { value: '95%', label: 'Client Satisfaction Rate' }
-  ];
-
   return (
     <div className="min-h-screen bg-gray-900 pt-16">
       {/* Hero Section */}

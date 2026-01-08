@@ -37,12 +37,7 @@ const ContactPage: React.FC = () => {
     }
   ];
 
-  const quickStats = [
-    { icon: Users, value: '500+', label: 'Clients Served' },
-    { icon: Award, value: '15+', label: 'Years Experience' },
-    { icon: Shield, value: '99.9%', label: 'Uptime SLA' },
-    { icon: Clock, value: '<5min', label: 'Response Time' }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gray-900 pt-16">
@@ -65,29 +60,6 @@ const ContactPage: React.FC = () => {
             </p>
           </motion.div>
 
-          {/* Quick Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {quickStats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="text-center bg-gray-800/50 border border-gray-700 rounded-xl p-6"
-              >
-                <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 mb-4">
-                  <stat.icon className="h-6 w-6 text-white" />
-                </div>
-                <div className="text-2xl md:text-3xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-gray-400 font-medium">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </section>
 
