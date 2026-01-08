@@ -7,7 +7,17 @@ import {
   Eye,
   Zap,
   ArrowRight,
-  CheckCircle 
+  CheckCircle,
+  FileCheck,
+  Users,
+  Lock,
+  Settings,
+  Target,
+  BookOpen,
+  ShieldCheck,
+  Database,
+  UserCheck,
+  Scale
 } from 'lucide-react';
 
 const Services: React.FC = () => {
@@ -46,6 +56,81 @@ const Services: React.FC = () => {
       description: 'Comprehensive recovery and business continuity planning.',
       features: ['Backup & Continuity Integrity', 'Disaster Recovery', 'Business Resumption'],
       color: 'from-purple-500 to-purple-600'
+    }
+  ];
+
+  const detailedServices = [
+    {
+      icon: Shield,
+      title: 'Information Security',
+      description: 'Safeguarding data, systems, and networks from threats.',
+      color: 'from-blue-500 to-blue-600'
+    },
+    {
+      icon: Target,
+      title: 'Security Program Maturity',
+      description: 'Measuring and improving the effectiveness of security practices.',
+      color: 'from-green-500 to-green-600'
+    },
+    {
+      icon: Search,
+      title: 'Assessment',
+      description: 'Evaluating systems and processes to identify security gaps.',
+      color: 'from-cyan-500 to-cyan-600'
+    },
+    {
+      icon: FileCheck,
+      title: 'Security Risk Assessment',
+      description: 'Analyzing risks to prioritize protections and reduce threats.',
+      color: 'from-purple-500 to-purple-600'
+    },
+    {
+      icon: Settings,
+      title: 'IT Risk Management',
+      description: 'Managing technology-related risks to ensure business continuity.',
+      color: 'from-orange-500 to-orange-600'
+    },
+    {
+      icon: Scale,
+      title: 'Compliance',
+      description: 'Meeting regulatory and industry security requirements.',
+      color: 'from-indigo-500 to-indigo-600'
+    },
+    {
+      icon: Users,
+      title: 'Cybersecurity Awareness',
+      description: 'Training people to recognize and prevent cyber threats.',
+      color: 'from-yellow-500 to-yellow-600'
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Vulnerability Assessment',
+      description: 'Identifying weaknesses that could be exploited.',
+      color: 'from-red-500 to-red-600'
+    },
+    {
+      icon: AlertTriangle,
+      title: 'Penetration Testing',
+      description: 'Simulating attacks to uncover security flaws.',
+      color: 'from-pink-500 to-pink-600'
+    },
+    {
+      icon: BookOpen,
+      title: 'Security Governance',
+      description: 'Framework for managing security roles, policies, and accountability.',
+      color: 'from-teal-500 to-teal-600'
+    },
+    {
+      icon: Database,
+      title: 'Data Protection & Policy',
+      description: 'Rules and practices for securing sensitive information.',
+      color: 'from-emerald-500 to-emerald-600'
+    },
+    {
+      icon: UserCheck,
+      title: 'vCISO as a Service',
+      description: 'On-demand expert guidance for leading your security strategy.',
+      color: 'from-violet-500 to-violet-600'
     }
   ];
 
@@ -140,6 +225,58 @@ const Services: React.FC = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Comprehensive Services Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-20"
+        >
+          <div className="text-center mb-16">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Security Built for 
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"> Threats You Haven't Met Yet</span>
+            </h3>
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+              Comprehensive cybersecurity services designed to protect, detect, and respond to evolving threats 
+              across your entire digital infrastructure.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {detailedServices.map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05, duration: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+                className="group relative"
+              >
+                <div className="h-full p-6 bg-gray-800/40 backdrop-blur-sm border border-gray-700 hover:border-cyan-500/50 rounded-xl transition-all duration-300">
+                  {/* Icon */}
+                  <div className="mb-4">
+                    <div className={`inline-flex p-3 rounded-lg bg-gradient-to-r ${service.color} shadow-lg`}>
+                      <service.icon className="h-5 w-5 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <h4 className="text-lg font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                    {service.title}
+                  </h4>
+                  
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Benefits Section */}
         <motion.div

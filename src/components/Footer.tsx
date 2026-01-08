@@ -60,13 +60,7 @@ const Footer: React.FC = () => {
     { name: 'GitHub', icon: Github, href: 'https://github.com/captivacyber', color: 'hover:text-gray-300' }
   ];
 
-  const certifications = [
-    'ISO 27001',
-    'SOC 2 Type II',
-    'PCI DSS',
-    'GDPR Compliant',
-    'HIPAA Compliant'
-  ];
+
 
   return (
     <footer className={`${
@@ -74,53 +68,7 @@ const Footer: React.FC = () => {
         ? 'bg-black border-gray-800' 
         : 'bg-gray-50 border-gray-200'
     } border-t`}>
-      {/* Newsletter Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className={`${
-          isDarkTheme 
-            ? 'bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border-gray-800' 
-            : 'bg-gradient-to-r from-blue-100 to-cyan-100 border-gray-200'
-        } border-b`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="text-center">
-            <h3 className={`text-2xl md:text-3xl font-bold mb-4 ${
-              isDarkTheme ? 'text-white' : 'text-gray-900'
-            }`}>
-              Stay Ahead of Cyber Threats
-            </h3>
-            <p className={`mb-8 max-w-2xl mx-auto ${
-              isDarkTheme ? 'text-gray-300' : 'text-gray-700'
-            }`}>
-              Subscribe to our newsletter for the latest cybersecurity insights, threat intelligence, 
-              and security best practices delivered to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className={`flex-1 px-4 py-3 rounded-lg transition-colors focus:ring-2 focus:ring-cyan-500/20 ${
-                  isDarkTheme 
-                    ? 'bg-gray-800/50 border border-gray-600 text-white placeholder-gray-400 focus:border-cyan-500' 
-                    : 'bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-blue-500'
-                }`}
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-lg transition-all duration-300"
-              >
-                Subscribe
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </motion.button>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -198,31 +146,7 @@ const Footer: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Certifications */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h4 className={`font-semibold mb-4 ${
-                isDarkTheme ? 'text-white' : 'text-gray-900'
-              }`}>Certifications & Compliance</h4>
-              <div className="flex flex-wrap gap-2">
-                {certifications.map((cert) => (
-                  <span
-                    key={cert}
-                    className={`px-3 py-1 text-xs rounded-full ${
-                      isDarkTheme 
-                        ? 'bg-gray-800 border border-gray-700 text-gray-300' 
-                        : 'bg-gray-100 border border-gray-300 text-gray-700'
-                    }`}
-                  >
-                    {cert}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
+
           </div>
 
           {/* Quick Links */}
