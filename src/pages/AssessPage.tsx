@@ -201,9 +201,7 @@ const AssessPage: React.FC = () => {
                   </div>
                 </div>
                 <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <div className="aspect-square rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30 flex items-center justify-center">
-                    <div className="text-6xl font-bold text-blue-400/50">{step.step}</div>
-                  </div>
+                  
                 </div>
               </motion.div>
             ))}
