@@ -10,7 +10,6 @@ import {
   CheckCircle,
   FileCheck,
   Users,
-  Lock,
   Settings,
   Target,
   BookOpen,

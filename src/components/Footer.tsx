@@ -9,7 +9,6 @@ import {
   Linkedin, 
   Facebook, 
   Github,
-  ArrowRight,
   ExternalLink
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
