@@ -121,12 +121,7 @@ const MonitorPage: React.FC = () => {
     'Proactive threat hunting'
   ];
 
-  const stats = [
-    { value: '24/7', label: 'Continuous Monitoring' },
-    { value: '<2min', label: 'Average Detection Time' },
-    { value: '99.9%', label: 'Uptime SLA' },
-    { value: '500+', label: 'Monitored Assets' }
-  ];
+
 
   const alertTypes = [
     {
